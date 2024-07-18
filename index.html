@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polo Price Calculator</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="max-w-lg w-full bg-white p-8 rounded shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Polo Price Calculator</h2>
+        <div class="mb-4">
+            <label for="minPrice" class="block text-sm font-medium text-gray-700">Minimum Price:</label>
+            <input type="number" id="minPrice" name="minPrice" value="50" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter minimum price...">
+        </div>
+        <div class="mb-4">
+            <label for="maxPrice" class="block text-sm font-medium text-gray-700">Maximum Price:</label>
+            <input type="number" id="maxPrice" name="maxPrice" value="100" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter maximum price...">
+        </div>
+        <div class="mb-4">
+            <label for="minOrderSize" class="block text-sm font-medium text-gray-700">Minimum Order Size:</label>
+            <input type="number" id="minOrderSize" name="minOrderSize" value="300" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter minimum order size...">
+        </div>
+        <div class="mb-4">
+            <label for="maxOrderSize" class="block text-sm font-medium text-gray-700">Maximum Order Size:</label>
+            <input type="number" id="maxOrderSize" name="maxOrderSize" value="1000" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter maximum order size...">
+        </div>
+        <div class="mb-4">
+            <label for="orderSize" class="block text-sm font-medium text-gray-700">Order Size:</label>
+            <input type="number" id="orderSize" name="orderSize" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter order size...">
+        </div>
+        <div class="mb-4">
+            <button id="calculateButton" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                Calculate
+            </button>
+        </div>
+        <div id="results" class="hidden">
+            <p id="priceResult" class="text-lg font-semibold mb-2"></p>
+            <p id="savingsResult" class="text-lg font-semibold"></p>
+        </div>
+    </div>
+
+    <!-- Include JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
